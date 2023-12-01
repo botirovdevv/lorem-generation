@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        display: none;
+    }
+
+.container{
+    width: 100%;
+    max-width: 1380px;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #e3e3e3;
+    height: 100%;
+}
+
+
+
+::selection{
+    background-color: red;
+}
+
+.lorem-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.lorem-title{
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.lorem-input{
+    border: 2px solid #000;
+    background-color: #dcdcdc;
+    width: 200px;
+    border-radius: 4px;
+    padding: 4px 7px;
+    font-weight: 500;
+    font-size: 17px;
+    outline: none;
+}
+
+.lorem-button{
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.lorem-button:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+.span{
+    color: red;
+}
+
+.lorem-text{
+    line-height: 27px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+ .app{
+    position: relative;
+} 
+
+.loader-spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+}
+
+@media screen and (max-width: 550px){
+    .lorem-title{
+        font-size: 30px;
+        letter-spacing: unset;
+    }
+
+    .lorem-input{
+        font-size: 15px;
+    }
+
+    .lorem-button{
+        font-size: 14px;
+    }
+
+    .lorem-text{
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .lorem-title{
+        font-size: 25px;
+    }
+
+    .lorem-input{
+        font-size: 14px;
+    }
+
+    .lorem-button{
+        font-size: 12px;
+    }
+
+    .lorem-text{
+        line-height: 24px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .lorem-title{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .lorem-input{
+        width: 100%;
+    }
+
+    .lorem-button{
+        font-size: 12px;
+    }
+
+    .lorem-text{
+        line-height: 22px;
+    }
+
+    .lorem-items{
+        padding: 0 20px;
+        gap: 8px;
+    }
+}
